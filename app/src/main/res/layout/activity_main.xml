@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="#EBF1AF"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="330dp"
         android:layout_height="110dp"
         android:layout_gravity="center"
+        app:cardBackgroundColor="#F8F6F6"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp">
 
@@ -37,6 +38,7 @@
         android:layout_height="320dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        app:cardBackgroundColor="#F8F6F6"
         app:cardCornerRadius="320dp"
         app:cardElevation="10dp">
 
@@ -47,8 +49,8 @@
             android:layout_gravity="center"
             android:text="0"
             android:textAlignment="center"
-            android:textColor="@color/navy_blue"
-            android:textSize="65sp"
+            android:textColor="#2196F3"
+            android:textSize="200sp"
             android:textStyle="bold">
 
         </TextView>
@@ -57,13 +59,12 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <Button
         android:id="@+id/incrementBtn"
-        android:layout_width="250dp"
+        android:layout_width="330dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#FEFEFE"
         android:text="Count"
         android:textAlignment="center"
@@ -76,7 +77,23 @@
 
     </Button>
 
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+       android:layout_marginTop="10dp"
+        android:backgroundTint="#FEFEFE"
+        android:text="Reset"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/navy_blue"
+        app:strokeWidth="2dp">
 
+    </Button>
 
 
 </LinearLayout>
